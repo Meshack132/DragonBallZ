@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\attacks\\attacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:attacks\\attacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\core\\factory\\charactercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:core\\factory\\charactercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\scenes\\epicbattlescenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:scenes\\epicbattlescenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\transformation\\transformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:transformation\\transformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\core\\models\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:core\\models\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\core\\interfaces\\itransformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:core\\interfaces\\itransformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\core\\interfaces\\icharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:core\\interfaces\\icharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|c:\\users\\e1009615\\dev\\dragonballz\\core\\interfaces\\iattackstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41CA9A3-7427-46C5-91CC-FD8D3748CDB4}|DragonBallZ.csproj|solutionrelative:core\\interfaces\\iattackstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICharacter.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Interfaces\\ICharacter.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\ICharacter.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Interfaces\\ICharacter.cs",
+              "RelativeToolTip": "Core\\Interfaces\\ICharacter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:56:27.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITransformation.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Interfaces\\ITransformation.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\ITransformation.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Interfaces\\ITransformation.cs",
+              "RelativeToolTip": "Core\\Interfaces\\ITransformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:54:39.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAttackStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Interfaces\\IAttackStrategy.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\IAttackStrategy.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Interfaces\\IAttackStrategy.cs",
+              "RelativeToolTip": "Core\\Interfaces\\IAttackStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:52:45.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Models\\BaseCharacter.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\BaseCharacter.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Models\\BaseCharacter.cs",
+              "RelativeToolTip": "Core\\Models\\BaseCharacter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:48:22.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transformation.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Transformation\\Transformation.cs",
+              "RelativeDocumentMoniker": "Transformation\\Transformation.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Transformation\\Transformation.cs",
+              "RelativeToolTip": "Transformation\\Transformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:46:35.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Attacks.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Attacks\\Attacks.cs",
+              "RelativeDocumentMoniker": "Attacks\\Attacks.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Attacks\\Attacks.cs",
+              "RelativeToolTip": "Attacks\\Attacks.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA8wDgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:44:27.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CharacterCreator.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Factory\\CharacterCreator.cs",
+              "RelativeDocumentMoniker": "Core\\Factory\\CharacterCreator.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Core\\Factory\\CharacterCreator.cs",
+              "RelativeToolTip": "Core\\Factory\\CharacterCreator.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:41:10.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EpicBattleScenario.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Scenes\\EpicBattleScenario.cs",
+              "RelativeDocumentMoniker": "Scenes\\EpicBattleScenario.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Scenes\\EpicBattleScenario.cs",
+              "RelativeToolTip": "Scenes\\EpicBattleScenario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:37:56.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\E1009615\\Dev\\DragonBallZ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAAOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T09:26:52.766Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

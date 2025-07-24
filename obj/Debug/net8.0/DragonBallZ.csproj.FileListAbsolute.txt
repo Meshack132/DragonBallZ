@@ -1,0 +1,14 @@
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.AssemblyInfoInputs.cache
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.AssemblyInfo.cs
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.csproj.CoreCompileInputs.cache
+C:\Users\E1009615\Dev\DragonBallZ\bin\Debug\net8.0\DragonBallZ.exe
+C:\Users\E1009615\Dev\DragonBallZ\bin\Debug\net8.0\DragonBallZ.deps.json
+C:\Users\E1009615\Dev\DragonBallZ\bin\Debug\net8.0\DragonBallZ.runtimeconfig.json
+C:\Users\E1009615\Dev\DragonBallZ\bin\Debug\net8.0\DragonBallZ.dll
+C:\Users\E1009615\Dev\DragonBallZ\bin\Debug\net8.0\DragonBallZ.pdb
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.dll
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\refint\DragonBallZ.dll
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.pdb
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\DragonBallZ.genruntimeconfig.cache
+C:\Users\E1009615\Dev\DragonBallZ\obj\Debug\net8.0\ref\DragonBallZ.dll
