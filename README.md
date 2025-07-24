@@ -104,7 +104,7 @@ Jiren responds with Power Impact!
 ## 👨‍💻 Author
 
 **Meshack Mthimkhulu**
-Software Engineer | C# Developer | Clean Architecture Advocate
+Software Engineer | Junior C# Developer |
 GitHub: [@Meshack132](https://github.com/Meshack132)
 
 ---
