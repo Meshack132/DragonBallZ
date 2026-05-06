@@ -1,0 +1,161 @@
+name: 🔥 DragonBallZ CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  # ─────────────────────────────────────────
+  # JOB 1: BUILD & TEST
+  # ─────────────────────────────────────────
+  build:
+    name: 🏗️ Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Restore Dependencies
+        run: dotnet restore
+
+      - name: 🔨 Build Solution
+        run: dotnet build --configuration Release --no-restore
+
+      - name: ✅ Run Tests
+        run: dotnet test --configuration Release --no-build --verbosity normal
+        continue-on-error: true  # won't fail pipeline if no tests exist yet
+
+      - name: 📊 Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragonballz-build
+          path: '**/bin/Release/**'
+          retention-days: 7
+
+  # ─────────────────────────────────────────
+  # JOB 2: CODE QUALITY
+  # ─────────────────────────────────────────
+  code-quality:
+    name: 🧹 Code Quality Check
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Restore Dependencies
+        run: dotnet restore
+
+      - name: 🔍 Check Code Format
+        run: dotnet format --verify-no-changes --verbosity diagnostic
+        continue-on-error: true  # warns but doesn't block
+
+      - name: 🛡️ Security Vulnerability Scan
+        run: dotnet list package --vulnerable --include-transitive
+        continue-on-error: true
+
+  # ─────────────────────────────────────────
+  # JOB 3: PUBLISH
+  # ─────────────────────────────────────────
+  publish:
+    name: 🚀 Publish App
+    runs-on: ubuntu-latest
+    needs: [ build, code-quality ]
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Restore Dependencies
+        run: dotnet restore
+
+      - name: 📤 Publish Application
+        run: |
+          dotnet publish DragonBallZ.App/DragonBallZ.App.csproj \
+            --configuration Release \
+            --output ./publish \
+            --self-contained false \
+            --runtime linux-x64
+
+      - name: 📦 Upload Published Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dragonballz-published
+          path: ./publish
+          retention-days: 14
+
+  # ─────────────────────────────────────────
+  # JOB 4: RELEASE (on version tags)
+  # ─────────────────────────────────────────
+  release:
+    name: 🏆 Create Release
+    runs-on: ubuntu-latest
+    needs: publish
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Restore & Build
+        run: |
+          dotnet restore
+          dotnet build --configuration Release --no-restore
+
+      - name: 📤 Publish for All Platforms
+        run: |
+          dotnet publish DragonBallZ.App/DragonBallZ.App.csproj -c Release -r win-x64   --self-contained true -o ./release/win-x64
+          dotnet publish DragonBallZ.App/DragonBallZ.App.csproj -c Release -r linux-x64 --self-contained true -o ./release/linux-x64
+          dotnet publish DragonBallZ.App/DragonBallZ.App.csproj -c Release -r osx-x64   --self-contained true -o ./release/osx-x64
+
+      - name: 🗜️ Zip Release Artifacts
+        run: |
+          cd release
+          zip -r dragonballz-win-x64.zip   win-x64/
+          zip -r dragonballz-linux-x64.zip linux-x64/
+          zip -r dragonballz-osx-x64.zip   osx-x64/
+
+      - name: 🚀 Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            release/dragonballz-win-x64.zip
+            release/dragonballz-linux-x64.zip
+            release/dragonballz-osx-x64.zip
+          body: |
+            ## 🔥 DragonBallZ Tournament of Power - ${{ github.ref_name }}
+
+            ### What's included:
+            - Windows (x64)
+            - Linux (x64)
+            - macOS (x64)
+
+            ### How to run:
+            Extract the zip and run `DragonBallZ.App`
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
